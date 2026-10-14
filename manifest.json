@@ -1,1 +1,8 @@
-{"schemaVersion":"1.0","updatedAt":"2026-10-14T12:00:00.000Z","plugins":[{"name":"logger","version":"1.0.0","description":"Simple logging plugin for JSQL - logs all queries and results","author":"vexify","license":"MIT","category":"other","tags":["logging","debug","development"],"jsql":{"minVersion":"6.0.0","maxVersion":null},"entry":"plugins/logger/index.js","files":["plugins/logger/index.js","plugins/logger/README.md"],"dependencies":[],"downloads":0,"createdAt":"2026-10-14T12:00:00.000Z","updatedAt":"2026-10-14T12:00:00.000Z"}]}
+{
+  "name": "jsql-plugins",
+  "version": "1.0.0",
+  "description": "JSQL Plugin Registry - Official plugin collection",
+  "plugins": [
+    "logger"
+  ]
+}
