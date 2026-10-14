@@ -1,0 +1,16 @@
+{
+  "name": "logger",
+  "version": "1.0.0",
+  "description": "Simple logging plugin for JSQL - logs all queries and results",
+  "author": "vexify",
+  "license": "MIT",
+  "category": "other",
+  "tags": ["logging", "debug", "development"],
+  "jsql": {
+    "minVersion": "6.0.0",
+    "maxVersion": null
+  },
+  "entry": "plugins/logger/index.js",
+  "files": ["plugins/logger/index.js", "plugins/logger/README.md"],
+  "dependencies": []
+}
