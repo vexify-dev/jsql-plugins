@@ -1,0 +1,26 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  security-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      
+      - name: Security check
+        run: node scripts/security-check.js
+      
+      - name: Generate registry
+        run: node scripts/generate-registry.js
+      
+      - name: Commit registry
+        run: |
+          git config user.name "CI Bot"
+          git config user.email "bot@jsql.dev"
+          git add registry.json
+          git diff --exit-code --quiet || git commit -m "chore: update registry"
+          git push
