@@ -5,19 +5,10 @@ Official plugin registry for JSQL-NEO embedded database.
 ## Install a Plugin
 
 ```bash
-jsql plugin install <name>
+npx jsql plugin install <name>
 ```
 
-## List Available Plugins
+## Test PR by VBot 🤖
 
-[Browse plugins](registry.json)
+This PR is created by VBot to test the GitHub webhook integration.
 
-## Develop a Plugin
-
-See [CONTRIBUTING.md](CONTRIBUTING.md)
-
-## Official Plugins
-
-- audit - Query audit & logging
-- logger - Structured logging
-- validation - Input validation
