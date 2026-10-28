@@ -5,6 +5,9 @@ on:
     branches: [main]
   pull_request:
 
+permissions:
+  contents: write
+
 jobs:
   security-check:
     runs-on: ubuntu-latest
@@ -23,4 +26,4 @@ jobs:
           git config user.email "bot@jsql.dev"
           git add registry.json
           git diff --exit-code --quiet || git commit -m "chore: update registry"
-          git push
+          git push "https://x-access-token:${GITHUB_TOKEN}@github.com/vexify-org/jsql-plugins.git" HEAD:main
