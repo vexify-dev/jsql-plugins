@@ -21,3 +21,6 @@ See [CONTRIBUTING.md](CONTRIBUTING.md)
 - audit - Query audit & logging
 - logger - Structured logging
 - validation - Input validation
+- xql - Query JSQL tables with XQL: SQL over documents, hash/range indexes, pipeline syntax
+
+

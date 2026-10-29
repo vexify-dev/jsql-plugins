@@ -1,0 +1,16 @@
+{
+  "name": "xql",
+  "version": "1.0.0",
+  "description": "Query JSQL tables with XQL: SQL over documents, hash/range indexes, pipeline syntax",
+  "author": "vexify",
+  "license": "Apache-2.0",
+  "category": "query",
+  "tags": ["xql", "query", "sql", "index", "nosql", "document"],
+  "jsql": {
+    "minVersion": "6.6.0",
+    "maxVersion": null
+  },
+  "entry": "plugins/xql/index.js",
+  "files": ["plugins/xql/index.js", "plugins/xql/README.md"],
+  "dependencies": []
+}
