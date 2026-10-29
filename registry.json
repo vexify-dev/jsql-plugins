@@ -216,7 +216,7 @@
       "document"
     ],
     "jsql": {
-      "minVersion": "6.6.0",
+      "minVersion": "6.5.12",
       "maxVersion": null
     },
     "entry": "plugins/xql/index.js",

@@ -5,12 +5,22 @@
   "author": "vexify",
   "license": "Apache-2.0",
   "category": "query",
-  "tags": ["xql", "query", "sql", "index", "nosql", "document"],
+  "tags": [
+    "xql",
+    "query",
+    "sql",
+    "index",
+    "nosql",
+    "document"
+  ],
   "jsql": {
-    "minVersion": "6.6.0",
+    "minVersion": "6.5.12",
     "maxVersion": null
   },
   "entry": "plugins/xql/index.js",
-  "files": ["plugins/xql/index.js", "plugins/xql/README.md"],
+  "files": [
+    "plugins/xql/index.js",
+    "plugins/xql/README.md"
+  ],
   "dependencies": []
 }
