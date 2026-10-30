@@ -1,7 +1,115 @@
 {
   "schemaVersion": "1.0",
-  "updatedAt": "2026-10-14T13:51:00.000Z",
+  "updatedAt": "2026-10-29T00:00:00.000Z",
   "plugins": [
+    {
+      "name": "capitalize",
+      "version": "1.0.0",
+      "description": "String capitalization plugin for JSQL",
+      "author": "VBot",
+      "license": "MIT",
+      "category": "other",
+      "tags": [
+        "string",
+        "capitalize"
+      ],
+      "jsql": {
+        "minVersion": "6.0.0",
+        "maxVersion": null
+      },
+      "entry": "plugins/capitalize/index.js",
+      "files": [
+        "plugins/capitalize/index.js",
+        "plugins/capitalize/manifest.json"
+      ],
+      "dependencies": [],
+      "downloads": 0,
+      "createdAt": "2026-10-14T12:00:00.000Z",
+      "updatedAt": "2026-10-28T00:00:00.000Z"
+    },
+    {
+      "name": "crypt",
+      "version": "1.0.0",
+      "description": "Transparent column encryption (AES-256-GCM): encrypt configured columns on write, decrypt on read, type-preserving, zero dependencies",
+      "author": "vexify-dev",
+      "license": "MIT",
+      "category": "security",
+      "tags": [
+        "encryption",
+        "security",
+        "aes",
+        "gcm",
+        "privacy",
+        "columns",
+        "crypto"
+      ],
+      "jsql": {
+        "minVersion": "6.0.0",
+        "maxVersion": null
+      },
+      "entry": "plugins/crypt/index.js",
+      "files": [
+        "plugins/crypt/index.js",
+        "plugins/crypt/README.md"
+      ],
+      "dependencies": [],
+      "downloads": 0,
+      "createdAt": "2026-10-14T12:00:00.000Z",
+      "updatedAt": "2026-10-28T00:00:00.000Z"
+    },
+    {
+      "name": "echo",
+      "version": "1.0.0",
+      "description": "Echo plugin — returns input as output for testing PR Auto Review",
+      "author": "VBot",
+      "license": "MIT",
+      "category": "other",
+      "tags": [
+        "testing",
+        "echo",
+        "devtools"
+      ],
+      "jsql": {
+        "minVersion": "6.0.0",
+        "maxVersion": null
+      },
+      "entry": "plugins/echo/index.js",
+      "files": [
+        "plugins/echo/index.js",
+        "plugins/echo/README.md",
+        "plugins/echo/manifest.json"
+      ],
+      "dependencies": [],
+      "downloads": 0,
+      "createdAt": "2026-10-14T12:00:00.000Z",
+      "updatedAt": "2026-10-28T00:00:00.000Z"
+    },
+    {
+      "name": "hash",
+      "version": "1.0.0",
+      "description": "Simple hash plugin for testing PR Auto Review",
+      "author": "VBot",
+      "license": "MIT",
+      "category": "other",
+      "tags": [
+        "hash",
+        "testing",
+        "md5"
+      ],
+      "jsql": {
+        "minVersion": "6.0.0",
+        "maxVersion": null
+      },
+      "entry": "plugins/hash/index.js",
+      "files": [
+        "plugins/hash/index.js",
+        "plugins/hash/manifest.json"
+      ],
+      "dependencies": [],
+      "downloads": 0,
+      "createdAt": "2026-10-14T12:00:00.000Z",
+      "updatedAt": "2026-10-28T00:00:00.000Z"
+    },
     {
       "name": "logger",
       "version": "1.0.0",
@@ -9,17 +117,135 @@
       "author": "vexify",
       "license": "MIT",
       "category": "other",
-      "tags": ["logging", "debug", "development"],
+      "tags": [
+        "logging",
+        "debug",
+        "development"
+      ],
       "jsql": {
         "minVersion": "6.0.0",
         "maxVersion": null
       },
       "entry": "plugins/logger/index.js",
-      "files": ["plugins/logger/index.js", "plugins/logger/README.md"],
+      "files": [
+        "plugins/logger/index.js",
+        "plugins/logger/README.md"
+      ],
       "dependencies": [],
       "downloads": 0,
       "createdAt": "2026-10-14T12:00:00.000Z",
-      "updatedAt": "2026-10-14T12:00:00.000Z"
+      "updatedAt": "2026-10-28T00:00:00.000Z"
+    },
+    {
+      "name": "metrics",
+      "version": "1.0.0",
+      "description": "Query performance profiler: per-pattern latency aggregation, slow-query log, and a stats API. Read-only observation, zero engine behavior change, zero dependencies.",
+      "author": "vexify-dev",
+      "license": "MIT",
+      "category": "monitoring",
+      "tags": [
+        "metrics",
+        "profiling",
+        "performance",
+        "monitoring",
+        "slow-query"
+      ],
+      "jsql": {
+        "minVersion": "6.0.0",
+        "maxVersion": null
+      },
+      "entry": "plugins/metrics/index.js",
+      "files": [
+        "plugins/metrics/index.js",
+        "plugins/metrics/README.md"
+      ],
+      "dependencies": [],
+      "downloads": 0,
+      "createdAt": "2026-10-14T12:00:00.000Z",
+      "updatedAt": "2026-10-28T00:00:00.000Z"
+    },
+    {
+      "name": "slug",
+      "version": "1.0.0",
+      "description": "URL slug generator plugin for JSQL",
+      "author": "VBot",
+      "license": "MIT",
+      "category": "other",
+      "tags": [
+        "slug",
+        "url",
+        "string"
+      ],
+      "jsql": {
+        "minVersion": "6.0.0",
+        "maxVersion": null
+      },
+      "entry": "plugins/slug/index.js",
+      "files": [
+        "plugins/slug/index.js",
+        "plugins/slug/manifest.json"
+      ],
+      "dependencies": [],
+      "downloads": 0,
+      "createdAt": "2026-10-14T12:00:00.000Z",
+      "updatedAt": "2026-10-28T00:00:00.000Z"
+    },
+    {
+      "name": "validation",
+      "version": "1.0.0",
+      "description": "Declarative input validation: string length, regex pattern, enum whitelist, number range and cross-field custom rules",
+      "author": "vexify-dev",
+      "license": "MIT",
+      "category": "validation",
+      "tags": [
+        "validation",
+        "constraints",
+        "schema",
+        "input",
+        "sanitize"
+      ],
+      "jsql": {
+        "minVersion": "6.0.0",
+        "maxVersion": null
+      },
+      "entry": "plugins/validation/index.js",
+      "files": [
+        "plugins/validation/index.js",
+        "plugins/validation/README.md"
+      ],
+      "dependencies": [],
+      "downloads": 0,
+      "createdAt": "2026-10-14T12:00:00.000Z",
+      "updatedAt": "2026-10-28T00:00:00.000Z"
+    },
+    {
+      "name": "xql",
+      "version": "1.0.0",
+      "description": "Query JSQL tables with XQL: SQL over documents, hash/range indexes, pipeline syntax",
+      "author": "vexify",
+      "license": "Apache-2.0",
+      "category": "query",
+      "tags": [
+        "xql",
+        "query",
+        "sql",
+        "index",
+        "nosql",
+        "document"
+      ],
+      "jsql": {
+        "minVersion": "6.5.12",
+        "maxVersion": null
+      },
+      "entry": "plugins/xql/index.js",
+      "files": [
+        "plugins/xql/index.js",
+        "plugins/xql/README.md"
+      ],
+      "dependencies": [],
+      "downloads": 0,
+      "createdAt": "2026-10-29T00:00:00.000Z",
+      "updatedAt": "2026-10-29T00:00:00.000Z"
     }
   ]
 }
